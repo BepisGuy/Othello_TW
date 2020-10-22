@@ -1,0 +1,37 @@
+body
+{
+background-color: rgb(156, 116, 63);
+}
+
+.TopBar
+{
+    background-color: black;
+    overflow: hidden;
+    padding: 0%;
+}
+
+.Logo
+{
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 25px;
+}
+
+.buttonLogin
+{
+    float: right;
+    margin: 10px;
+}
+
+.NavBar
+{
+    background-color: black;
+    width: 200px;
+    height: 720px;
+}
+
+.button
+{
+    
+}
