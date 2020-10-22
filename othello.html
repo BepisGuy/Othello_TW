@@ -3,19 +3,41 @@
 
     <head>
         <meta charset=UTF-8> 
-        <title>Dominó</title>
-    <link rel="stylesheet" href="domino.css">
+        <title>Othello</title>
+    <link rel="stylesheet" href="othello.css">
   </head>
 
   <body>
 
     <div class="TopBar">
-        <a class="Logo">Othello</a>
+        <a class="Logo">OTHELLO</a>
         <button class="buttonLogin">Login</button>
+        <a class="Username">Username</a>
     </div>
 
     <div class="NavBar">
-        <button class="button">Play</button>
+        <button class="button" id="PlayButton">Play</button>
+        <button class="button" id="ConfigButton">Settings</button>
+        <button class="button" id="RulesButton">Rules</button>
+        <button class="button" id="ScoresButton">Scores</button>
+    </div>
+
+    <div class="form" style="margin-top: 150px; display: none;">
+      <div class="logoContainer">
+        <img src="logo.png" alt="Othello logo" class="logo">
+        <h1 id="gameName">Othello</h1>
+      </div>
+   
+     <div class="loginContainer">
+       <label for="user">Username</label><br>
+       <input type="text" placeholder="Enter Username" name="user" required><br>
+  
+       <label for="pass">Password</label><br>
+       <input type="password" placeholder="Enter Password" name="pass" required><br>
+  
+       <button type="submit" class="loginBtn">Login</button>
+     </div>
+
     </div>
 
   </body>

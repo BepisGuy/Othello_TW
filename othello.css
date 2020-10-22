@@ -1,37 +1,100 @@
 body
 {
-background-color: rgb(156, 116, 63);
+background-color: white;
+margin: 0%;
 }
 
 .TopBar
 {
-    background-color: black;
-    overflow: hidden;
+    margin: 0%;
+    background-color: springgreen;
     padding: 0%;
 }
 
 .Logo
 {
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 36px;
     margin: 25px;
+    letter-spacing: 12px;
 }
 
 .buttonLogin
 {
     float: right;
-    margin: 10px;
+    margin: 0.5%;
+}
+
+.Username
+{
+    float: right;
+    margin: 0.5%;
+    font-weight: bold;
 }
 
 .NavBar
 {
-    background-color: black;
-    width: 200px;
-    height: 720px;
+    background-color: springgreen;
+    float: left;
+    width: 300px;
+    height: 100%;
+    position: fixed;
 }
 
 .button
 {
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    border: groove;
+    font-size: 200%;
+}
+
+form {
+    padding: 50px 20px;
+    position: relative;
+    height: 50%;
+    width: 50%;
+    background-color: springgreen;
+    border-radius: 25%;
+}
+.logoContainer 
+{
+    /*background-color: teal;*/
+    text-align: center;
+}
+
+img.logo 
+{
+    /*background-color: yellow;*/
+    width: 15%;
+    border-radius: 10%;
+}
+
+.loginContainer 
+{
+    /*background-color: violet;*/
+    text-align: center;
+    padding: 20px;
+}
+
+input[type=text], input[type=password] 
+{
+    display: inline-block;
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ccc;
+}
+.loginBtn 
+{
+    width: 190px;
+    padding: 10px;
+    margin: 8px;
+}
+#gameName 
+{
+    text-align: center;
+    margin: -5px;
 }
