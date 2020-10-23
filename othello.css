@@ -67,15 +67,15 @@ margin: 0%;
   }
 
 .loginPrompt {
+    display: none;
     margin-top: 150px;
     margin-left: 600px;
     padding: 50px 20px;
-    position: relative;
+    position: fixed;
     height: 50%;
     width: 50%;
     background-color: springgreen;
     border-radius: 25%;
-    display: none;
 }
 .logoContainer 
 {
@@ -118,6 +118,7 @@ input[type=text], input[type=password]
 
 .rules
 {
+    position: fixed;
     margin-top: 150px;
     margin-left: 40%;
     display: none;
@@ -125,7 +126,7 @@ input[type=text], input[type=password]
 
 .ExitButton
 {
-    position: absolute;
+    position: fixed;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: rgb(219, 59, 59);
@@ -145,8 +146,8 @@ input[type=text], input[type=password]
 
 #ExitLogin
 {
-    top: 10%;
-    left: 80%;
+    top: 25%;
+    left: 70%;
 }
 
 #boardLayer {

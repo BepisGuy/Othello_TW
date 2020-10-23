@@ -1,10 +1,10 @@
-function toggleDisplay(id) { 
-	if(document.getElementById(id).style.display=="none")
-	{
-	document.getElementById(id).style.display="block"; 
-	}
-	else
-	{
-		document.getElementById(id).style.display="none";
-	}
+function toggleDisplay(id) {
+	var content = document.getElementById(id);
+	
+    if (!content.style.display ||content.style.display == "none") {
+       content.style.display = "block";
+    }
+    else {
+       content.style.display = "none";
+    }
 }
