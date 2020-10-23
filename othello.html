@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="PT">
+<html lang="ENG">
 
     <head>
         <meta charset=UTF-8> 
         <title>Othello</title>
     <link rel="stylesheet" href="othello.css">
+    <script type="text/javascript" src="funcoes.js"></script>
   </head>
 
   <body>
 
     <div class="TopBar">
         <a class="Logo">OTHELLO</a>
-        <button class="buttonLogin">Login</button>
+        <button onclick="toggleDisplay('loginPrompt')" class="buttonLogin">Login</button>
         <a class="Username">Username</a>
     </div>
 
     <div class="NavBar">
-        <button class="button" id="PlayButton">Play</button>
-        <button class="button" id="ConfigButton">Settings</button>
-        <button class="button" id="RulesButton">Rules</button>
+        <button class="button" id="PlayAI">Play vs AI</button>
+        <button class="button" id="PlayPlayer">Play vs Player</button>
+        <button onclick="toggleDisplay('rules')" class="button" id="RulesButton">Rules</button>
         <button class="button" id="ScoresButton">Scores</button>
     </div>
 
-    <div class="form" style="margin-top: 150px; display: none;">
+    <div class="loginPrompt" id="loginPrompt">
       <div class="logoContainer">
         <img src="logo.png" alt="Othello logo" class="logo">
         <h1 id="gameName">Othello</h1>
@@ -38,6 +39,19 @@
        <button type="submit" class="loginBtn">Login</button>
      </div>
 
+     <button onclick="toggleDisplay('loginPrompt')" class="ExitButton" id="ExitLogin">X</button>
+    </div>
+
+    <div class="rules" id="rules">
+      <img src="rules.png">
+      <button onclick="toggleDisplay('rules')" class="ExitButton" id="ExitRules">X</button>
+    </div>
+
+    <div id="gameContainer">
+      <div id="boardLayer"></div>
+      <div id="diskLayer"></div>
+      <div id="possibleMoveLayer"></div>
+      <div id="scoreLayer"></div>
     </div>
 
   </body>

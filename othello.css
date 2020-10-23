@@ -6,6 +6,7 @@ margin: 0%;
 
 .TopBar
 {
+    height: 50px;
     margin: 0%;
     background-color: springgreen;
     padding: 0%;
@@ -15,9 +16,9 @@ margin: 0%;
 {
     color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 36px;
+    font-size: 48px;
     margin: 25px;
-    letter-spacing: 12px;
+    letter-spacing: 2px;
 }
 
 .buttonLogin
@@ -44,21 +45,37 @@ margin: 0%;
 
 .button
 {
+    color: black;
+    background-color: white;
+    border-radius: 12px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50%;
-    border: groove;
-    font-size: 200%;
+    margin-top: 40%;
+    font-size: 250%;
 }
 
-form {
+.button:hover
+{
+    background-color: rgb(219, 219, 219);
+}
+
+.button:active {
+    background-color: rgb(219, 219, 219);
+    box-shadow: 0 5px rgb(68, 156, 113);
+    transform: translateY(4px);
+  }
+
+.loginPrompt {
+    margin-top: 150px;
+    margin-left: 600px;
     padding: 50px 20px;
     position: relative;
     height: 50%;
     width: 50%;
     background-color: springgreen;
     border-radius: 25%;
+    display: none;
 }
 .logoContainer 
 {
@@ -97,4 +114,47 @@ input[type=text], input[type=password]
 {
     text-align: center;
     margin: -5px;
+}
+
+.rules
+{
+    margin-top: 150px;
+    margin-left: 40%;
+    display: none;
+}
+
+.ExitButton
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(219, 59, 59);
+    color: white;
+    font-size: 8px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#ExitRules
+{
+    top: 23%;
+    left: 59.2%;
+}
+
+#ExitLogin
+{
+    top: 10%;
+    left: 80%;
+}
+
+#boardLayer {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 365px;
+    height: 365px;
+    background-color: black;
+    display: none;
 }
