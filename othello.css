@@ -67,15 +67,14 @@ margin: 0%;
   }
 
 .loginPrompt {
+    top: 200px;
+    left: 500px;
     display: none;
-    margin-top: 150px;
-    margin-left: 600px;
     padding: 50px 20px;
     position: fixed;
     height: 50%;
     width: 50%;
     background-color: springgreen;
-    border-radius: 25%;
 }
 .logoContainer 
 {
@@ -151,8 +150,8 @@ input[type=text], input[type=password]
 
 #ExitLogin
 {
-    top: 25%;
-    left: 70%;
+    top: 240px;
+    right: 400px;
 }
 
 #boardLayer {
