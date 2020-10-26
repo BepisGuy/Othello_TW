@@ -17,10 +17,23 @@
     </div>
 
     <div class="NavBar">
-        <button class="button" id="PlayAI">Play vs AI</button>
+        <button onclick="toggleDisplay('PlaySettingsAI')" class="button"  id="PlayAI">Play vs AI</button>
         <button class="button" id="PlayPlayer">Play vs Player</button>
         <button onclick="toggleDisplay('rules')" class="button" id="RulesButton">Rules</button>
         <button class="button" id="ScoresButton">Scores</button>
+    </div>
+
+    <div class="PlaySettingsAI" id="PlaySettingsAI">
+      <div class="ColorOptions"> <h3>Color</h3>
+        <input type="radio" name="colors" value="white">White
+        <input type="radio" name="colors" value="black">Black
+      </div>
+      <br>
+      <div  class="DifficultyOptions"> <h3>Difficulty</h3>
+        <input type="radio" name="difficulty" value="easy">Easy
+        <input type="radio" name="difficulty" value="medium">Medium
+        <input type="radio" name="difficulty" value="hard">Hard
+      </div>
     </div>
 
     <div class="loginPrompt" id="loginPrompt">

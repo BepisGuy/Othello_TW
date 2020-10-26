@@ -163,3 +163,14 @@ input[type=text], input[type=password]
     background-color: black;
     display: none;
 }
+
+.PlaySettingsAI
+{
+    display: none;
+    padding: 50px;
+    background-color: springgreen;
+    position: fixed;
+    float: right;
+    top: 30%;
+    left: 50%;
+}
