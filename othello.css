@@ -124,6 +124,12 @@ input[type=text], input[type=password]
     display: none;
 }
 
+/* .rules a {
+     float: left; 
+    top: 20px;
+    right: 20px;
+} */
+
 .ExitButton
 {
     position: fixed;
@@ -140,8 +146,7 @@ input[type=text], input[type=password]
 
 #ExitRules
 {
-    top: 23%;
-    left: 59.2%;
+    float: right;
 }
 
 #ExitLogin
