@@ -1,6 +1,7 @@
 body
 {
-background-color: white;
+/*background-color: white;*/
+background-image: url("background.jpg");
 margin: 0%;
 }
 
@@ -16,8 +17,8 @@ margin: 0%;
 {
     color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 48px;
-    margin: 25px;
+    font-size: 47px;
+    margin: 12px;
     letter-spacing: 2px;
 }
 
@@ -117,17 +118,23 @@ input[type=text], input[type=password]
 
 .rules
 {
+    background-color: springgreen;
     position: fixed;
-    margin-top: 150px;
-    margin-left: 40%;
+    top: 15%;
+    left: 40%;
+    height: 600px;
+    width: 600px;
     display: none;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
 }
 
-/* .rules a {
-     float: left; 
-    top: 20px;
-    right: 20px;
-} */
+.RulesText
+{
+    top: 50%;
+}
 
 .ExitButton
 {
@@ -145,7 +152,10 @@ input[type=text], input[type=password]
 
 #ExitRules
 {
-    float: right;
+    top: 77%;
+    right: 37.5%;
+    width: 100px;
+    height: 50px;
 }
 
 #ExitLogin
@@ -164,13 +174,28 @@ input[type=text], input[type=password]
     display: none;
 }
 
+#ExitPlaySettingsAI
+{
+    position: fixed;
+    top: 28%;
+    right: 32.8%;
+}
+
 .PlaySettingsAI
 {
+    font-size: 22px;
+    text-align: center;
     display: none;
     padding: 50px;
     background-color: springgreen;
     position: fixed;
     float: right;
-    top: 30%;
-    left: 50%;
+    top: 25%;
+    left: 45%;
+    border-radius: 8px;
+}
+
+.gameContainer
+{
+    display: none;
 }
