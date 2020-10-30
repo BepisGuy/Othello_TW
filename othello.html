@@ -24,6 +24,23 @@
         <button class="button" id="ScoresButton">Scores</button>
     </div>
 
+    <div id="gameContainer">
+      <div id="boardLayer"> </div>
+      <div id="diskLayer"></div>
+      <div id="possibleMoveLayer"></div>
+      <div id="scoreLayer"></div>
+      <div id="commandsLayer">
+          <div id="turnContainer">
+              <div id="turnLabel"><b>Turn</b></div>
+              <div id="turnBox"></div>
+          </div>
+          <div id="giveUpcontainer">
+              <button type="button" onclick="newGame()" id="newGameButton">New Game</button>
+              <button type="button" onclick="giveUp()" id="giveUpButton">Give Up</button>
+          </div>
+      </div>
+  </div>
+
     <div class="PlaySettingsAI" id="PlaySettingsAI">
       <button onclick="toggleDisplay('PlaySettingsAI')" class="ExitButton" id="ExitPlaySettingsAI">X</button>
       <div class="ColorOptions"> <h3>Color</h3>
@@ -77,23 +94,6 @@
       </div>
       <button onclick="toggleDisplay('rules')" class="ExitButton" id="ExitRules">X</button>
     </div>
-
-    <div id="gameContainer">
-      <div id="boardLayer"></div>
-      <div id="diskLayer"></div>
-      <div id="possibleMoveLayer"></div>
-      <div id="scoreLayer"></div>
-      <div id="commandsLayer">
-          <div id="turnContainer">
-              <div id="turnLabel"><b>Turn</b></div>
-              <div id="turnBox"></div>
-          </div>
-          <div id="giveUpcontainer">
-              <button type="button" onclick="newGame()" id="newGameButton">New Game</button>
-              <button type="button" onclick="giveUp()" id="giveUpButton">Give Up</button>
-          </div>
-      </div>
-  </div>
 
   </body>
 

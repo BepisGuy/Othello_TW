@@ -183,7 +183,6 @@ input[type=text], input[type=password]
     height: 60px;
     width: 445px;
     background-color: black;
-<<<<<<< HEAD
     color: white;
     font-size: 50px;
     text-align: center;
@@ -250,7 +249,6 @@ input[type=text], input[type=password]
 #turnLabel {
     height: 20px;
     font-size: 20px;
-=======
     display: none;
 }
 
@@ -258,7 +256,7 @@ input[type=text], input[type=password]
 {
     position: fixed;
     top: 28%;
-    right: 32.8%;
+    right: 33.5%;
 }
 
 .PlaySettingsAI
@@ -270,18 +268,96 @@ input[type=text], input[type=password]
     background-color: springgreen;
     position: fixed;
     float: right;
-<<<<<<< HEAD
     top: 30%;
     left: 50%;
->>>>>>> main
-=======
     top: 25%;
     left: 45%;
     border-radius: 8px;
 }
 
-.gameContainer
+#gameContainer
 {
     display: none;
->>>>>>> main
+}
+
+#boardLayer {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 365px;
+    height: 365px;
+    background-color: #282828;
+}
+
+#scoreLayer {
+    top: 76.2%;
+    left: 40%;
+    position: absolute;
+    height: 60px;
+    width: 445px;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+#commandsLayer {
+    position: absolute;
+    height: 507px;
+    width: 150px;
+    background-color: black;
+    top: 30%;
+    right: 28.9%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px ;
+}
+
+#turnContainer {
+    text-align: center;
+    position: absolute;
+    height: 125px;
+    width: 100px;
+    background-color: #282828;
+    top: 20%;
+    left: 17%;
+    border-radius: 25px;
+}
+
+/*
+#giveUpContainer {
+    position: absolute;
+    height: 80px;
+    width: 100px;
+    background-color: pink;
+    top: 65%;
+    left: 17%;
+}*/
+
+#giveUpButton {
+    position: absolute;
+    top: 72%;
+    width: 100%;
+    font-size: 20px;
+}
+
+#newGameButton {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    font-size: 20px;
+}
+
+#turnBox {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: green;
+    top: 20%;
+    left: 10%;
+    border-radius: 30%;
+}
+
+#turnLabel {
+    height: 20px;
+    font-size: 20px;
 }
