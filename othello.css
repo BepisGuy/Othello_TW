@@ -67,15 +67,14 @@ margin: 0%;
   }
 
 .loginPrompt {
+    top: 200px;
+    left: 500px;
     display: none;
-    margin-top: 150px;
-    margin-left: 600px;
     padding: 50px 20px;
     position: fixed;
     height: 50%;
     width: 50%;
     background-color: springgreen;
-    border-radius: 25%;
 }
 .logoContainer 
 {
@@ -124,6 +123,12 @@ input[type=text], input[type=password]
     display: none;
 }
 
+/* .rules a {
+     float: left; 
+    top: 20px;
+    right: 20px;
+} */
+
 .ExitButton
 {
     position: fixed;
@@ -140,14 +145,13 @@ input[type=text], input[type=password]
 
 #ExitRules
 {
-    top: 23%;
-    left: 59.2%;
+    float: right;
 }
 
 #ExitLogin
 {
-    top: 25%;
-    left: 70%;
+    top: 240px;
+    right: 400px;
 }
 
 #gameContainer
@@ -169,6 +173,7 @@ input[type=text], input[type=password]
     height: 60px;
     width: 445px;
     background-color: black;
+<<<<<<< HEAD
     color: white;
     font-size: 50px;
     text-align: center;
@@ -235,4 +240,18 @@ input[type=text], input[type=password]
 #turnLabel {
     height: 20px;
     font-size: 20px;
+=======
+    display: none;
+}
+
+.PlaySettingsAI
+{
+    display: none;
+    padding: 50px;
+    background-color: springgreen;
+    position: fixed;
+    float: right;
+    top: 30%;
+    left: 50%;
+>>>>>>> main
 }

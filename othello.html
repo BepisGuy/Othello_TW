@@ -18,16 +18,30 @@
     </div>
 
     <div class="NavBar">
-        <button class="button" id="PlayAI">Play vs AI</button>
+        <button onclick="toggleDisplay('PlaySettingsAI')" class="button"  id="PlayAI">Play vs AI</button>
         <button class="button" id="PlayPlayer">Play vs Player</button>
         <button onclick="toggleDisplay('rules')" class="button" id="RulesButton">Rules</button>
         <button class="button" id="ScoresButton">Scores</button>
+    </div>
+
+    <div class="PlaySettingsAI" id="PlaySettingsAI">
+      <div class="ColorOptions"> <h3>Color</h3>
+        <input type="radio" name="colors" value="white">White
+        <input type="radio" name="colors" value="black">Black
+      </div>
+      <br>
+      <div  class="DifficultyOptions"> <h3>Difficulty</h3>
+        <input type="radio" name="difficulty" value="easy">Easy
+        <input type="radio" name="difficulty" value="medium">Medium
+        <input type="radio" name="difficulty" value="hard">Hard
+      </div>
     </div>
 
     <div class="loginPrompt" id="loginPrompt">
       <div class="logoContainer">
         <img src="logo.png" alt="Othello logo" class="logo">
         <h1 id="gameName">Othello</h1>
+        <button onclick="toggleDisplay('loginPrompt')" class="ExitButton" id="ExitLogin">X</button>
       </div>
    
      <div class="loginContainer">
@@ -40,7 +54,6 @@
        <button type="submit" class="loginBtn">Login</button>
      </div>
 
-     <button onclick="toggleDisplay('loginPrompt')" class="ExitButton" id="ExitLogin">X</button>
     </div>
 
     <div class="rules" id="rules">
