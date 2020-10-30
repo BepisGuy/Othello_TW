@@ -25,6 +25,7 @@
     </div>
 
     <div class="PlaySettingsAI" id="PlaySettingsAI">
+      <button onclick="toggleDisplay('PlaySettingsAI')" class="ExitButton" id="ExitPlaySettingsAI">X</button>
       <div class="ColorOptions"> <h3>Color</h3>
         <input type="radio" name="colors" value="white">White
         <input type="radio" name="colors" value="black">Black
@@ -35,6 +36,8 @@
         <input type="radio" name="difficulty" value="medium">Medium
         <input type="radio" name="difficulty" value="hard">Hard
       </div>
+
+      <button onclick="toggleDisplay('PlaySettingsAI');toggleDisplay('gameContainer')" class="button" id="StartGame">Start Game</button>
     </div>
 
     <div class="loginPrompt" id="loginPrompt">
@@ -57,7 +60,21 @@
     </div>
 
     <div class="rules" id="rules">
-      <img src="rules.png">
+      <div class="RulesText">
+        <a>Reversi involves play by two parties on an eight-by-eight square grid with pieces that have two distinct sides. Pieces typically appear coin-like, with a light and a dark face, each side representing one player.</a> 
+        <br>
+        <br>
+        <a>The goal for each player is to make pieces of their colour constitute a majority of the pieces on the board at the end of the game, by turning over as many of their opponent's pieces as possible.</a>
+        <br>
+        <br>
+        <a>Each piece played must be laid adjacent to an opponent's piece so that the opponent's piece or a row of opponent's pieces is flanked by the new piece and another piece of the player's colour. All of the opponent's pieces between these two pieces are 'captured' and turned over to match the player's colour.</a>
+        <br>
+        <br>
+        <a>It can happen that a piece is played so that pieces or rows of pieces in more than one direction are trapped between the new piece played and other pieces of the same colour. In this case, all the pieces in all viable directions are turned over. </a>
+        <br>
+        <br>
+        <a>The game is over when neither player has a legal move (i.e. a move that captures at least one opposing piece) or when the board is full.</a>
+      </div>
       <button onclick="toggleDisplay('rules')" class="ExitButton" id="ExitRules">X</button>
     </div>
 
